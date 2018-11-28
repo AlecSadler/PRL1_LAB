@@ -15,3 +15,4 @@ int main(){
     printf("%.2f\n%.2f\n",a,b);
     return 0;
 }
+
