@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct node{
+    int value;
+    struct node *next;
+};
+typedef struct node Node;
+typedef Node* NodeList;
+
+void add_h (NodeList *head,int v){
+    NodeList new_val=malloc(sizeof(Node));           /* add element in head position*/
+    new_val->next=*head;
+    new_val->value=v;
+    *head=new_val;
+}
+
+void del_h (NodeList *head){                        /* remove element in head position*/
+    NodeList aux=*head;
+    if (*head != NULL){
+        *head=(*head)->next;
+        free(aux);}
+}
+
+void print_list (NodeList head){                    /* print list elements */
+    NodeList cur=head;
+    while (cur != NULL){
+        printf("%d\n",cur->value);
+        cur=cur->next;}
+}
+
+int main(){
+    NodeList list=NULL;
+    int n;
+    int end=0;                           /* end is used to stop iteration */
+    while (end==0){
+    scanf("%d",&n);
+    if (n>0) add_h(&list,n);
+    else if (n==0) del_h(&list);
+    else {
+        print_list(list);
+        end=1;}}
+    return 0;
+}
+   
+
+    
+    
+
+
