@@ -41,7 +41,7 @@ int sum_nodes (ListEl head){
 
 int quarter (ListEl head,int n){
   int q=n/4;
-  if (head==NULL)                // return how many elements are than n/4
+  if (head==NULL)                // return how many elements are bigger than n/4
     return 0;
   else{
     if (head->value > q)
