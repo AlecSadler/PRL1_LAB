@@ -1,3 +1,7 @@
+/* il seguente codice acquisisce una sequenza di interi positivi inserendolo in una lista in ordine di acquisizione,
+l'acquisizione termina al primo input negativo (che non viene aggiunto), successivamente acquisisce un intero ed elimina
+dalla lista i primi n elementi. Se n è maggiore o uguale della lunghezza della lista ritorna NULL. */
+
 #include <stdio.h>
 #include <stdlib.h>
 
