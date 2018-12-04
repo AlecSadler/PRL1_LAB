@@ -1,3 +1,8 @@
+/* il codice riceve da input una serie di interi positivi e li aggiunge ad una lista in ordine di inserimento,
+l'aggiunta si interrompe al primo valore negativo (che non va inserito), quindi ritorna la somma degli elementi in lista e
+il numero degli elementi maggiori di 1/4 della somma calcolata prima */
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
