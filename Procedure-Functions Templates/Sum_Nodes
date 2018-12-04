@@ -1,0 +1,11 @@
+// returns the sum of all the list elements
+
+int sum_nodes (ListEl head){
+  int sum=0;
+  if (head!=NULL){                  
+    if (head->next==NULL){
+      sum=sum+head->value;}
+    else{
+      sum=sum+head->value+sum_nodes(head->next);}}
+  return sum;
+}
