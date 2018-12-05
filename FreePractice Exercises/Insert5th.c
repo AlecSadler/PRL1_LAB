@@ -1,3 +1,7 @@
+/* il seguente codice, acquisisce una serie di interi inserendoli in una lista in ordine di arrivo, l'acquisizione
+termina alla prima occorrenza negativa, successivamente acquisisce un ulteriore intero che viene inserito dopo il quarto
+elemento, se la lista contiene meno di 4 elementi, viene aggiunto in coda */
+
 #include <stdio.h>
 #include <stdlib.h>
 
