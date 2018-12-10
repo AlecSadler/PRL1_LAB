@@ -1,4 +1,4 @@
-/7 il seguente codice calcola le soluzioni di un'equazione di secondo grado
+// il seguente codice calcola le soluzioni di un'equazione di secondo grado
 
 #include <stdio.h>
 #include <math.h>
@@ -46,3 +46,4 @@ void main(){
     printf("Soluzione X1 = %f\n",solutions.x1);
     printf("Soluzione X2 = %f\n",solutions.x2);}
 }
+
