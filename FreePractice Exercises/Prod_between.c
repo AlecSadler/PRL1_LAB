@@ -53,6 +53,7 @@ int prod_between (ListEl head,int n,int m){
         indexn=indexn->next;}
       while (indexm->value != m){
         indexm=indexm->next;}
+      printf ("Parametri selezionati: n=%d m=%d\n",indexn->value,indexm->value);
       if (indexn->value==indexm->value)
         prod=0;
       else{
@@ -64,13 +65,13 @@ int prod_between (ListEl head,int n,int m){
 }
 
 int member (ListEl head,int el){
-    ListEl cur=head;
-    int ok=0;
-    while (cur != NULL && ok==0){
-        if (cur->value==el){
-            ok=1;}
-        else
-            cur=cur->next;}
+     if (head==NULL)
+        return 0;                // return TRUE if "el" is contained in list
+     else{
+       if (head->value==el)
+          return 1;
+      else
+          return member(head->next,el);}
 }
 
 void main(){
@@ -87,9 +88,10 @@ void main(){
       add_ordered(&list,v);}
     else{
       end=1;}}
-  if (!member(list,n) || !member(list,m))
-       printf("n and m parameters are not members of the list\n");
-  else{
-    res=prod_between(list,n,m);
-    printf("%d\n",res);}
-}
+ if (!member(list,n) || !member(list,m)){
+   printf ("i parametri n e m non appartengono alla lista");}
+ else{
+   res=prod_between(list,n,m);
+   printf("%d\n",res);}
+ }
+
