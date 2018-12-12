@@ -1,0 +1,6 @@
+La lista bounded-1 e':
+(2 3 2 3 )
+La distanza massima e':
+1
+La lista modificata e':
+(3 )

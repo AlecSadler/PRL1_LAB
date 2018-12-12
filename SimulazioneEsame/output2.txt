@@ -1,0 +1,6 @@
+La lista bounded-20 e':
+(7 9 18 28 48 )
+La distanza massima e':
+20
+La lista modificata e':
+(7 9 18 48 )
