@@ -1,4 +1,4 @@
-/* La funzione restituisce la lunghezza del massimo suffisso di una lista di interi strettamente minore di un intero n
+/* La funzione restituisce il massimo suffisso di una lista di interi strettamente minore di un intero n
 dato come input, senza usare risorsione esplicita */
 
 #let suffix n l=
