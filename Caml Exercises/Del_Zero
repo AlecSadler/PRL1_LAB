@@ -1,5 +1,5 @@
 /* La seguente funzione cancella da una lista, gli elementi che seguono l'ultima occorrenza del valore 0,senza usare
-ricorsione esplicita */
+ricorsione esplicita,se la lista non contiene 0, viene cancellata totalmente */
 
 #let delzero l=
     let f x (l1,found)= if x=0 then 
