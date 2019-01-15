@@ -1,6 +1,6 @@
 /* La funzione restituisce il massimo prefisso di una lista strettamente minore di un numero n dato in input */
 
-let start n l=
+#let start n l=
   let rec aux n l (l1,sum)= match l with
     []-> ([],0)
     |[x]-> if x<n then (l1 @ [x],sum+x)
