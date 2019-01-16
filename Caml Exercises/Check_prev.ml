@@ -10,7 +10,7 @@ in let (a,b)= foldr f (true,false) l in a;;
 
 CON RICORSIONE ESPLICITA
 
-let checknm l n m=
+#let checknm l n m=
   let rec aux l n m (ok,b)= match l with
     []-> (ok,b)
     |x::[]-> (ok,b)
