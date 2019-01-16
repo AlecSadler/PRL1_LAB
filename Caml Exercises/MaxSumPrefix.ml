@@ -1,6 +1,6 @@
 La seguente funzione restituisce il massimo prefisso, la cui somma degli elementi è strettamente minore di un intero n
 
-#let sumsuffix l n=
+#let sumprefix l n=
   let rec aux l n (l1,sum)= match l with
     []-> (l1,sum)
     |x::[]-> if x<n then (l1@[x],sum+x)
