@@ -6,7 +6,7 @@ CON RICORSIONE ESPLICITA
 	let rec aux l l1= match l with
 	  []-> l1
 	  |x::[]-> l1
-	  |x::y::ys-> if x<y then aux (y::ys) y::l1
+	  |x::y::ys-> if x<y then aux (y::ys) (y::l1)
               else aux (y::ys) l1
          in aux l [];;  
   
