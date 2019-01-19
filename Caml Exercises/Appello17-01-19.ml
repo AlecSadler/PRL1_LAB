@@ -3,12 +3,12 @@ La seguente funzione data una lista, ritorna una lista contenente tutti gli elem
 CON RICORSIONE ESPLICITA
 
 #let prec l =
-	let rec aux l (l1,z)= match l with
-	  []-> (l1,z)
-	  |x::[]-> (l1,z)
-	  |x::y::ys-> if x<y then aux (y::ys) (y::l1,x)
-              else aux (y::ys) (l1,x)
-  in let (a,b)=  aux l ([],0) in a;;  
+	let rec aux l l1= match l with
+	  []-> l1
+	  |x::[]-> l1
+	  |x::y::ys-> if x<y then aux (y::ys) y::l1
+              else aux (y::ys) l1
+         in aux l [];;  
   
 SENZA RICORSIONE ESPLICITA
 
