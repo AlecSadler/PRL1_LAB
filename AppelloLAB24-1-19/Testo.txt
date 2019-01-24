@@ -1,0 +1,8 @@
+Il programma acquisisce due liste di matricole di studenti (interi) che corrispondono agli esiti di due esami,
+queste liste devono essere ordinate nel seguente modo, prima tutte le matricole pari in ordine crescente, poi quelle dispari
+sempre in ordine crescente.
+
+successivamente mediante una funzione viene creata una una terza lista che corrisponde all'unione delle due senza duplicati
+e anche questa deve essere ordinata come le precedenti.
+
+ultima funzione conta dalla lista unione quante sono le matricole pari.
