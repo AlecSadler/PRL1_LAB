@@ -12,7 +12,13 @@ CON RICORSIONE ESPLICITA
   
 SENZA RICORSIONE ESPLICITA
 
- #let precfold l=
-    let f x (l1,y)= if x<y then (y::l1,x)
-                    else (l1,x)
-    in let (a,b)= foldr f ([],0) l in a;;                
+ 
+#let precfold l=
+ 	let f x (s,l,b)=
+		if not b then (x,l,true)
+		else if x<s then (x,s::l,b)
+			else (x,l,b)
+	in match l with
+	[]->[]
+        |x::xs-> let (a,b,c) = foldr f (x,[],false) l in b;;
+    
