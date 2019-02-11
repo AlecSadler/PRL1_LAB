@@ -1,0 +1,4 @@
+Array:
+1 1 1 1 0 0 0 1 
+Totale occorrenze di 1: 5
+Condizione per 3 uno contigui: FALSA

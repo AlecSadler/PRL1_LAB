@@ -1,0 +1,4 @@
+Array:
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Totale occorrenze di 1: 0
+Condizione per 2 uno contigui: FALSA

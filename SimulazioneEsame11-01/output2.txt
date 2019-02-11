@@ -1,0 +1,4 @@
+Array:
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 
+Totale occorrenze di 1: 3
+Condizione per 3 uno contigui: VERA
