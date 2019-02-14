@@ -87,7 +87,7 @@ int lettura_lossy(float arr[]){
 				arr[i]=n;
 				i++;}
 			else{
-				arr[i-DIM_ARRAY]=n;
+				arr[i%9]=n;
 				i++;}}
 		else
 			end=1;}
