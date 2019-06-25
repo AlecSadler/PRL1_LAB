@@ -77,11 +77,11 @@ void printList(Product *head){
 void main(){
   Product *list=NULL;
   readProducts(&list);
-  printf("lista originale:\n " );
+  printf("lista originale: \n" );
   printList(list);
   filter(&list);
-  printf("Lista filtrata:\n " );
+  printf("Lista filtrata: \n" );
   printList(list);
-  printf("Prodotti con differenza maggiore di 10 euro: \n " );
+  printf("Prodotti con differenza maggiore di 10 euro: \n" );
   printDiff(list);
 }
