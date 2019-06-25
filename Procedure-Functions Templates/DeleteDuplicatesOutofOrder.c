@@ -2,8 +2,7 @@ void delDupl(node *head){
   node *x=head;
   node *prev;
   node *cur;
-  int found=0;
-  while (x!=NULL && !found){
+  while (x!=NULL){
     cur=x->next;
     prev=x;
     while (cur!=NULL){
