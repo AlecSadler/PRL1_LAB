@@ -1,10 +1,10 @@
 // cancella determinati nodi in base a una condizione (VERSIONE ITERATIVA)
 
 void deleteSomeNode (node **head){
-  node *x=*head;
-  node *prev=NULL;
-  node *fw=x->next;
   if (*head!=NULL){
+    node *x=*head;
+    node *prev=NULL;
+    node *fw=x->next;
     while (fw!=NULL){
       if (***CONDITION***){
         if (prev==NULL){
