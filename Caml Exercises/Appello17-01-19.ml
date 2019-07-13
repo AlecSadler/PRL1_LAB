@@ -13,12 +13,9 @@ CON RICORSIONE ESPLICITA
 SENZA RICORSIONE ESPLICITA
 
  
-#let precfold l=
- 	let f x (s,l,b)=
-		if not b then (x,l,true)
-		else if x<s then (x,s::l,b)
-			else (x,l,b)
-	in match l with
-	[]->[]
-        |x::xs-> let (a,b,c) = foldr f (x,[],false) l in b;;
-    
+#let precmin l=
+  let f x (l1,l2)= match l2 with
+        []-> (l1,x::l2)
+        |y::ys-> if x < y then (y::l1,x::l2)
+                      else (l1,x::l2)
+  in let (a,b)= foldr f ([],[]) l in a;;
