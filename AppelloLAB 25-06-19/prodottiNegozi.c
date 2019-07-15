@@ -1,3 +1,10 @@
+/* Il testo chiedeva di inserire una serie di prodotti, identificati da un codice articolo, un prezzo di un negozio e un prezzo
+di un secondo negozio (contenuti in una struct), in una lista ordinata. Successivamente chiedeva di stampare gli elementi con
+una differenza di prezzo tra i due negozi maggiore a 10 euro, e di eliminare dalla lista i prodotti non disponibili in uno dei
+due negozi (con prezzo valorizzato a -1). La funzione che stampa i prodotti con differenza >10 andava fatta ricorsiva.
+La filter non necessariamente, sotto il main ho messo l'alternativa iterativa della stessa funzione. */
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
