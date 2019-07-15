@@ -59,7 +59,7 @@ void filter(Product **head){
       filter(&(*head));}
     else{
       filter(&(*head)->next);}}
-  return;
+  else return;
 }
 
 // stampa il codice prodotto la cui differenza dei due prezzi è maggiore di 10
