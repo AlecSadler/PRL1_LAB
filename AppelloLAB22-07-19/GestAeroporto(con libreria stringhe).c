@@ -15,7 +15,7 @@ typedef struct a Aereo;
 // stampa una lista
 void printList(Aereo *head){
   if (head!=NULL){
-    printf("Destinazione %s - Carburante %d - Miglia %d\n",head->dest,head->carburante,head->miglia);
+    printf("Destinazione %c%c%c - Carburante %d - Miglia %d\n",head->dest[0],head->dest[1],head->dest[2],head->carburante,head->miglia);
     printList(head->next);}
   else return;
 }
