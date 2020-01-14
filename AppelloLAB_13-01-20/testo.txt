@@ -1,0 +1,7 @@
+Dato lo scheletro Main del programma, implementare le seguenti funzioni:
+
+- acquisire con inserimento in testa una serie di interi, l'acquisizione viene interrotta dal primo input <= 0.
+
+- ogni elemento della lista passata in input deve essere la somma di quelli che lo precedono (1-2-3 -> 1-3-6).
+
+- data una lista e un intero, eliminare tutte le occorrenze maggiori di quest'ultimo.
