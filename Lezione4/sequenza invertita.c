@@ -1,11 +1,3 @@
-//
-//  main.c
-//  lezione4
-//
-//  Created by Salvo Firera on 09/10/18.
-//  Copyright © 2018 Salvo Firera. All rights reserved.
-//
-
 #include <stdio.h>
 
 int main(){
